@@ -6,7 +6,7 @@ Note that these are obtained manually, as the links of the Canvases are random h
 
 ## How to get the Canvases
 
-To get the Canvas of a song, you need to find out the request the Spotify mobile app is making by intercepting the network traffic from your mobile device.
+To get the Canvas of a song, you need to find out the request the Spotify mobile app is making by intercepting the network traffic of your mobile device.
 
 Spotify Canvases are from `https://canvaz.scdn.co`.
 
