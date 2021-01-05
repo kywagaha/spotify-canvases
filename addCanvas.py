@@ -4,20 +4,19 @@ import requests
 import time
 import sys
 
-data = None
-
-try:
-    f = open('canvases.json')
-    data = json.load(f)
-except:
-    print('')
-    print('\033[91m\033[1mError\033[0m')
-    print('File \033[1mcanvases.json\033[0m does not exist')
-    print('')
-    sys.exit(0)
-
-
 def askInfo(repeated):
+    data = None
+    try:
+        f = open('canvases.json')
+        data = json.load(f)
+        f.close()
+    except:
+        print('')
+        print('\033[91m\033[1mError\033[0m')
+        print('File \033[1mcanvases.json\033[0m does not exist')
+        print('')
+        sys.exit(0)
+
     if repeated == False:
         print('')
         print(
@@ -51,7 +50,7 @@ def askInfo(repeated):
         time.sleep(0.3)
         videoUrl = input(
             "\033[1mPlease enter the video URL\033[0m › ")
-        addToJson(uri, songName, songArtist, videoUrl, repeated)
+        addToJson(uri, songName, songArtist, videoUrl, repeated, data)
     else:
         print('')
         print('\033[91m\033[1mError\033[0m')
@@ -60,7 +59,17 @@ def askInfo(repeated):
         repeat(True)
 
 
-def addToJson(uri, songName, songArtist, videoUrl, repeated):
+def addToJson(uri, songName, songArtist, videoUrl, repeated, data):
+    if bool(re.match(r"https:\/\/canvaz.scdn.co\/upload\/(artist||licensor)\/", videoUrl)) == False:
+        print('')
+        print('\033[91m\033[1mError\033[0m')
+        print('Video URL is not a canvaz.scdn.co URL')
+        print('')
+        time.sleep(0.1)
+        videoUrl = input(
+            "\033[1mPlease enter the video URL\033[0m › ")
+        addToJson(uri, songName, songArtist, videoUrl, repeated, data)   
+
     data['canvases'].append({
         "title": songName,
         "artist": songArtist,
