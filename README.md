@@ -14,4 +14,4 @@ On iOS, we use an app called [Charles Proxy](https://apps.apple.com/us/app/charl
 
 ## Contributing
 
-If you would like to add some Spotify Canvas links, please submit a pull request. You could either edit the `canvases.json` file on GitHub, or clone this repository. We have made a Python script that lets you easily add to the file. **We will only accept pull requests with video URLs from `canvaz.scdn.co`**. We will not accept third-party links.
+If you would like to add some Spotify Canvas links, please submit a pull request. You could either edit the `canvases.json` file on GitHub, or clone this repository. We have made a Python 3 script that lets you easily add to the file. The only module you need installed is `requests`. This validates and gets the title and artist from the URI. **We will only accept pull requests with video URLs from `canvaz.scdn.co`**. We will not accept third-party links.
