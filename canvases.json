@@ -725,6 +725,18 @@
             "artist": "Stephanie Poetri",
             "uri": "spotify:track:3tDY9KeyLoXKd956CwzPTN",
             "canvas": "https://canvaz.scdn.co/upload/artist/0HS00NN7MAfF59aJnfcxSO/video/9a7102bf61bf460cbca7e3a96df1a8c7.cnvs.mp4"
+        },
+        {
+            "title": "The Home Depot Beat",
+            "artist": "The Home Depot",
+            "uri": "spotify:track:4euxYgIl5XEqUj5WB9lHNq",
+            "canvas": "https://gemini-app.s3-us-west-1.amazonaws.com/shed.mp4"
+        }, 
+        {
+            "title": "Ring of Fortune",
+            "artist": "佐々木恵梨",
+            "uri": "spotify:track:2lPuTPwMUBRpNfNrA7sfuT",
+            "canvas": "https://gemini-app.s3-us-west-1.amazonaws.com/plasticmemories.mov"
         }
     ]
 }
