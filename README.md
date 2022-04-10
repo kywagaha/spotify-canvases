@@ -1,5 +1,7 @@
 # spotify-canvases
 
+**Archived. Please check out [this project](https://github.com/itsmeow/Spicetify-Canvas) and [this project](https://github.com/bartleyg/my-spotify-canvas) for reverse engineered solutions for the Spotify Canvas API.**
+
 Video URLs from [Spotify Canvas](https://canvas.spotify.com/en-us)
 
 Note that these are obtained manually, as the links of the Canvases are random hashes. They do not relate to the track ID or anything in the [Get a Track endpoint](https://developer.spotify.com/documentation/web-api/reference/tracks/get-track/).
